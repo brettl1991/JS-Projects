@@ -22,7 +22,7 @@ const add1 = (a, b) => {
   console.log(a + b);
 };
 
-add(2, 3);
+add1(2, 3);
 
 //example
 const array = [1, 2, 3];
@@ -38,3 +38,21 @@ const greeting = (name) => {
 };
 
 greeting("Agnes");
+
+//Default parameters
+
+const add2 = (a, b = 0) => {
+  //b =0 if user not assign to it any value
+  console.log(a + b);
+};
+
+add2(1);
+
+//array destructuring
+const arr = [1, 2, 3];
+// const first = arr[0];
+// const third = arr[2];
+
+const [first, , third] = arr;
+
+console.log(first, third);
