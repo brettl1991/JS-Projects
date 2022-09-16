@@ -71,3 +71,7 @@ const object = {
 //with destructuring
 const { channelName, views } = object;
 // console.log(channelName, views);
+
+//Rest operator
+const add3 = (...numbers) => console.log(numbers.reduce((a, b) => a + b, 0));
+add3(1, 2, 3); //6
