@@ -27,5 +27,14 @@ add(2, 3);
 //example
 const array = [1, 2, 3];
 array.map((n) => {
-  console.log(n);
+  // console.log(n);
 });
+
+//template string
+const greeting = (name) => {
+  // const string = "Hello, " + name + "!";
+  const templateString = `Hello, ${name}!`;
+  console.log(templateString);
+};
+
+greeting("Agnes");
