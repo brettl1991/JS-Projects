@@ -56,3 +56,18 @@ const arr = [1, 2, 3];
 const [first, , third] = arr;
 
 console.log(first, third);
+
+//object destructuring
+const object = {
+  channelName: "JavaScript Mastery",
+  views: 1500,
+};
+// console.log(chanelName); //we can not do this as this is in an obj
+
+// const chanelName = object.channelName;
+// const views = object.views;
+
+// console.log(chanelName, views);
+//with destructuring
+const { channelName, views } = object;
+// console.log(channelName, views);
