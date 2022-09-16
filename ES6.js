@@ -75,3 +75,9 @@ const { channelName, views } = object;
 //Rest operator
 const add3 = (...numbers) => console.log(numbers.reduce((a, b) => a + b, 0));
 add3(1, 2, 3); //6
+
+//Spread operator
+const arr7 = [1, 2, 3];
+
+// console.log(arr7[0], arr7[1], arr7[2]);
+console.log(...arr7);
